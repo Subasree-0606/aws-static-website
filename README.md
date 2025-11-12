@@ -70,3 +70,15 @@ If you want further edits or a different layout for the projects section (cards,
 ---
 
 © Subasree Rajaram
+
+## Screenshot (hero section)
+
+Below is the hero/intro screenshot used for reference. To display this in the README on your local copy, place the image file at `assets/images/hero.png` (or update the filename below to match the actual file) and then the image will render here.
+
+![Hero screenshot](assets/images/hero.png)
+
+If you don't yet have the image file saved in the repository, you can add it by copying your screenshot into `assets/images/hero.png`. On Windows you can drag the image into the folder in File Explorer or save it from an editor. If the screenshot file uses a different name or extension (for example `hero.jpg` or `hero.jpeg`) update the markdown above accordingly.
+
+Tips:
+- Keep the screenshot file under 1–2 MB for faster page loads on GitHub.
+- Use the exact relative path `assets/images/hero.png` so the image shows correctly in the README on GitHub and when served locally.
