@@ -1,0 +1,190 @@
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --muted:#9aa4b2;
+  --accent:#6ee7b7;
+  --text:#e6eef6;
+  --container:1100px;
+  --radius:12px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:linear-gradient(180deg,var(--bg),#071021 120%);
+  color:var(--text);
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  padding-bottom:3rem;
+}
+
+/* containers */
+.container{
+  max-width:var(--container);
+  margin:0 auto;
+  padding:1.25rem;
+}
+
+/* header */
+.site-header{
+  position:sticky;
+  top:0;
+  backdrop-filter: blur(6px);
+  background:rgba(7,12,25,0.5);
+  border-bottom:1px solid rgba(255,255,255,0.03);
+}
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.brand{
+  color:var(--text);
+  text-decoration:none;
+  font-weight:700;
+  letter-spacing:0.3px;
+}
+
+/* nav */
+.nav{display:flex;gap:1rem;align-items:center}
+.nav a{color:var(--muted);text-decoration:none;font-size:0.95rem}
+.nav a:hover{color:var(--text)}
+#nav-toggle{display:none;background:transparent;border:1px solid rgba(255,255,255,0.05);padding:6px 10px;border-radius:8px;color:var(--muted)}
+
+/* hero */
+.hero{padding:3.5rem 0}
+.hero-inner{display:grid;grid-template-columns:1fr;gap:1.25rem;align-items:center}
+.hero-text h1{font-size:1.9rem;margin:0}
+.lead{color:var(--muted);margin-top:0.5rem}
+.accent{color:var(--accent)}
+.cta{
+  display:inline-block;margin-top:1rem;padding:0.6rem 1rem;border-radius:10px;background:linear-gradient(90deg,var(--accent),#4fd1c5);
+  color:#022; text-decoration:none;font-weight:600;
+}
+
+/* hero image */
+.hero-image img{width:160px;height:160px;object-fit:cover;border-radius:999px;border:4px solid rgba(255,255,255,0.04)}
+
+/* sections */
+.about, .projects, .contact{margin-top:2rem;padding:1.25rem;background:rgba(255,255,255,0.02);border-radius:var(--radius)}
+.skills{display:flex;gap:0.5rem;list-style:none;padding:0;margin-top:.75rem}
+.skills li{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;font-size:.9rem;color:var(--muted)}
+.project{padding:.75rem 0;border-bottom:1px dashed rgba(255,255,255,0.02)}
+.project:last-child{border-bottom:none}
+.small{color:var(--muted);font-size:.9rem}
+
+/* footer */
+.site-footer{margin-top:2rem;text-align:center;color:var(--muted)}
+
+/* responsive */
+@media(min-width:880px){
+  .hero-inner{grid-template-columns:1fr 320px}
+  .hero-text h1{font-size:2.4rem}
+  #nav-toggle{display:none}
+}
+@media(max-width:879px){
+  .nav{position:relative}
+  #nav-toggle{display:inline-block}
+  .nav a{display:none}
+  .nav.open a{display:inline-block;margin-top:.5rem}
+}
+
+/* Projects section */
+.projects {
+  margin: 2rem 0;
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  gap: 2rem;
+}
+
+.project:last-child {
+  border-bottom: none;
+}
+
+.project-content {
+  flex: 1;
+}
+
+.project h3 {
+  font-size: 1.25rem;
+  margin: 0 0 0.75rem 0;
+  color: var(--text);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.project-number {
+  color: var(--accent);
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.project-level {
+  color: var(--muted);
+  font-size: 0.9rem;
+  white-space: nowrap;
+  min-width: 100px;
+  text-align: right;
+}
+
+.project p {
+  color: var(--muted);
+  margin: 0.75rem 0;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.project strong {
+  color: var(--text);
+}
+
+/* Skills/Tags */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.75rem 0;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  background: rgba(110, 231, 183, 0.1);
+  border: 1px solid rgba(110, 231, 183, 0.3);
+  border-radius: 16px;
+  font-size: 0.8rem;
+  color: var(--accent);
+}
+
+/* Highlights & Links */
+.project-highlights {
+  list-style: none;
+  margin: 0.75rem 0 0 0;
+  padding: 0;
+}
+
+.project-highlights li {
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.project-highlights a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.project-highlights a:hover {
+  text-decoration: underline;
+}

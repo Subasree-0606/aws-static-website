@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Subasree Rajaram — AWS DevOps Engineer portfolio. Projects: Static website on AWS, CI/CD, Terraform." />
+  <title>Subasree Rajaram — AWS DevOps Engineer</title>
+
+  <!-- Open Graph / social -->
+  <meta property="og:title" content="Subasree Rajaram — AWS DevOps Engineer" />
+  <meta property="og:description" content="Portfolio: AWS + Terraform + CI/CD projects" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/profile.jpg" />
+
+  <link rel="icon" href="assets/favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">•SR</a>
+      <nav class="nav" id="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button id="nav-toggle" aria-controls="nav" aria-expanded="false">Menu</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Hi, I'm <span class="accent">Subasree Rajaram</span></h1>
+          <p class="lead">AWS DevOps Engineer • Infrastructure as Code • CI/CD • Containers • Observability </p>
+          <p>
+            I build reliable infrastructure and automated pipelines for modern cloud applications.
+          </p>
+          <p><a class="cta" href="#projects">See my projects</a></p>
+        </div>
+        <div class="hero-image">
+          <img src="assets/images/Profile.jpeg" alt="Portrait of Subasree" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>About me</h2>
+      <p>
+        I work with AWS services like S3, CloudFront, Route53, and IaC tools such as Terraform.
+        I enjoy automating infrastructure and creating CI/CD pipelines.
+      </p>
+      <ul class="skills">
+        <li>AWS</li><li>Terraform</li><li>GitHub Actions</li><li>Linux & Shell</li><li>Docker</li><li>CI/CD</li><li>IaC</li><li>Monitoring</li><li>Prometheus</li><li>Grafana</li><li>Kubernetes Basics</li><li>Jenkins</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="container projects">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <div class="project-content">
+          <h3><span class="project-number">1.</span> Static Website on AWS</h3>
+          <p>Hosted a portfolio site on S3, used CloudFront for CDN and Route53 for a custom domain. Deployed with Terraform and automated via GitHub Actions.</p>
+          <div class="project-tags">
+            <span class="tag">S3</span>
+            <span class="tag">CloudFront</span>
+            <span class="tag">Route 53</span>
+            <span class="tag">Terraform</span>
+            <span class="tag">GitHub Actions</span>
+          </div>
+          <ul class="project-highlights">
+            <li><strong>Highlights:</strong> Infrastructure as Code, CI/CD, custom domain setup.</li>
+            <li><strong>Links:</strong> <a href="#">GitHub</a> • <a href="#">Live demo</a></li>
+          </ul>
+        </div>
+        <span class="project-level">Beginner</span>
+      </div>
+
+      <div class="project">
+        <div class="project-content">
+          <h3><span class="project-number">2.</span> CI/CD Pipeline for a Flask App</h3>
+          <p>Create a pipeline that builds, tests, and deploys a Flask app to EC2 using CodeBuild, CodePipeline and CodeDeploy (or GitHub Actions + SSH).</p>
+          <div class="project-tags">
+            <span class="tag">EC2</span>
+            <span class="tag">CodePipeline</span>
+            <span class="tag">CodeBuild</span>
+            <span class="tag">Docker</span>
+          </div>
+          <ul class="project-highlights">
+            <li><strong>Highlights:</strong> CI with CodeBuild, CD with CodeDeploy, version-controlled builds.</li>
+            <li><strong>Links:</strong> <a href="#">GitHub</a> • <a href="#">Demo</a></li>
+          </ul>
+        </div>
+        <span class="project-level">Intermediate</span>
+      </div>
+
+      <div class="project">
+        <div class="project-content">
+          <h3><span class="project-number">3.</span> Containerized Microservice with ECS + Fargate</h3>
+          <p>Containerize a microservice (Node.js/Python) and deploy it to AWS ECS using Fargate. Push Docker images to ECR.</p>
+          <div class="project-tags">
+            <span class="tag">Docker</span>
+            <span class="tag">ECS</span>
+            <span class="tag">Fargate</span>
+            <span class="tag">ECR</span>
+          </div>
+          <ul class="project-highlights">
+            <li><strong>Highlights:</strong> Container orchestration, Serverless deployment, Terraform IaC.</li>
+            <li><strong>Links:</strong> <a href="#">GitHub</a> • <a href="#">Demo</a></li>
+          </ul>
+        </div>
+        <span class="project-level">Intermediate</span>
+      </div>
+
+      <div class="project">
+        <div class="project-content">
+          <h3><span class="project-number">4.</span> Monitoring & Logging Stack</h3>
+          <p>Set up a monitoring solution that tracks your app's CPU, memory, and uptime using AWS CloudWatch or Prometheus + Grafana.</p>
+          <div class="project-tags">
+            <span class="tag">CloudWatch</span>
+            <span class="tag">Prometheus</span>
+            <span class="tag">Grafana</span>
+            <span class="tag">EC2</span>
+          </div>
+          <ul class="project-highlights">
+            <li><strong>Highlights:</strong> CloudWatch metrics & alarms, log management, alerting.</li>
+            <li><strong>Links:</strong> <a href="#">GitHub</a> • <a href="#">Demo</a></li>
+          </ul>
+        </div>
+        <span class="project-level">Intermediate</span>
+      </div>
+
+      <div class="project">
+        <div class="project-content">
+          <h3><span class="project-number">5.</span> Auto Scaling Infrastructure</h3>
+          <p>Create an EC2-based web app that auto-scales based on CPU usage with a load balancer and CloudWatch alarms.</p>
+          <div class="project-tags">
+            <span class="tag">EC2</span>
+            <span class="tag">Load Balancer</span>
+            <span class="tag">Auto Scaling</span>
+            <span class="tag">Terraform</span>
+          </div>
+          <ul class="project-highlights">
+            <li><strong>Highlights:</strong> Dynamic scaling, load balancing, monitoring-driven automation.</li>
+            <li><strong>Links:</strong> <a href="#">GitHub</a> • <a href="#">Demo</a></li>
+          </ul>
+        </div>
+        <span class="project-level">Intermediate</span>
+      </div>
+
+      <div class="project">
+        <div class="project-content">
+          <h3><span class="project-number">6.</span> Jenkins CI/CD Pipeline on AWS</h3>
+          <p>Install Jenkins on EC2 using Terraform. Automate Docker build + test + deploy pipeline with GitHub integration.</p>
+          <div class="project-tags">
+            <span class="tag">Jenkins</span>
+            <span class="tag">EC2</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Terraform</span>
+          </div>
+          <ul class="project-highlights">
+            <li><strong>Highlights:</strong> Jenkins pipeline scripting, infrastructure automation, GitHub webhooks.</li>
+            <li><strong>Links:</strong> <a href="#">GitHub</a> • <a href="#">Demo</a></li>
+          </ul>
+        </div>
+        <span class="project-level">Advanced</span>
+      </div>
+
+      <div class="project">
+        <div class="project-content">
+          <h3><span class="project-number">7.</span> End-to-End DevOps Project (Capstone)</h3>
+          <p>Full-stack deployment: Build a Flask/Node app, containerize with Docker, deploy via GitHub Actions to ECS Fargate, and monitor with Grafana.</p>
+          <div class="project-tags">
+            <span class="tag">Flask/Node</span>
+            <span class="tag">Docker</span>
+            <span class="tag">GitHub Actions</span>
+            <span class="tag">ECS Fargate</span>
+          </div>
+          <ul class="project-highlights">
+            <li><strong>Highlights:</strong> Production-like deployment, full CI/CD pipeline, observability stack.</li>
+            <li><strong>Links:</strong> <a href="#">GitHub</a> • <a href="#">Demo</a></li>
+          </ul>
+        </div>
+        <span class="project-level">Advanced</span>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:subasreerajaram0606@gmail.com">subasreerajaram0606@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/Subasree-0606" target="_blank" rel="noopener">github.com/Subasree-0606</a></p>
+      <p>LinedIn: <a href="https://www.linkedin.com/in/subasree-rajaram-b4b882360/" target="_blank" rel="noopener">linkedin.com/in/subasree-rajaram-b4b882360/</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Subasree Rajaram — Built with ❤️</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
